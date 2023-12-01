@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ed47a1586163540b33b18c5bfd239b, type: 3}
   m_Name: Enemy_Golem
   m_EditorClassIdentifier: 
-  MaxHealth: 500
-  CurrentHealth: 500
+  MaxHealth: 100
+  CurrentHealth: 50
   BaseDefense: 20
   CurrentDefense: 20

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Player Data
   m_EditorClassIdentifier: 
   MaxHealth: 100
-  CurrentHealth: 865
+  CurrentHealth: 46.317314
   BaseDefense: 10
   CurrentDefense: 10

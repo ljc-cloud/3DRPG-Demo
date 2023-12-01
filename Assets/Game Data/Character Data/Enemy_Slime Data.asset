@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Enemy_Slime Data
   m_EditorClassIdentifier: 
   MaxHealth: 50
-  CurrentHealth: 96.5538
+  CurrentHealth: 50
   BaseDefense: 5
   CurrentDefense: 5

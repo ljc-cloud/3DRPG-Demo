@@ -1,4 +1,5 @@
 using RPG.SO;
+using System;
 using UnityEngine;
 
 namespace RPG.State
@@ -162,6 +163,8 @@ namespace RPG.State
             }
         }
 
+        public event Action<float, float> OnUpdateHealthBarUI;
+
         public void TakeDamage(CharacterStates attacker, CharacterStates defender)
         {
 
@@ -175,6 +178,7 @@ namespace RPG.State
                 defender.GetComponent<Animator>().SetBool("die", true);
             }
             // todo Update UI
+            defender.OnUpdateHealthBarUI?.Invoke(CurrentHealth, MaxHealth);
             // todo Update 经验
         }
 
@@ -188,12 +192,13 @@ namespace RPG.State
                 defender.GetComponent<Animator>().SetBool("die", true);
             }
             // todo Update UI
+            defender.OnUpdateHealthBarUI?.Invoke(CurrentHealth, MaxHealth);
             // todo Update 经验
         }
 
         private float CurrentDamage()
         {
-            float coreDamage = Random.Range(MinDamage, MaxDamage);
+            float coreDamage = UnityEngine.Random.Range(MinDamage, MaxDamage);
             float damage = IsCritical ? coreDamage * CriticalMultiplier : coreDamage;
             return damage;
         }
