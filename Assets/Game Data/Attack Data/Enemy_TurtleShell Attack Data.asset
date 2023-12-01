@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00fa8db1049a5c48b9e993cdb50bb21, type: 3}
+  m_Name: Enemy_TurtleShell Attack Data
+  m_EditorClassIdentifier: 
+  AttackRange: 0.9
+  SkillRange: 2.98
+  Cooldown: 1
+  MinDamage: 1
+  MaxDamage: 5
+  CriticalMultiplier: 1.5
+  CriticalChance: 0.2
